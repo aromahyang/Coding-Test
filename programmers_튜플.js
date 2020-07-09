@@ -14,7 +14,7 @@ function solution(s) {
         }
     }
     
-    arrays = arrays.sort((a,b)=> a.length > b.length ? 1 : -1)
+    arrays = arrays.sort((a,b)=> a.length - b.length)
         .map(e => e.reduce((accum, cur) => accum + cur, 0));
     
     answer.push(arrays[0]);
